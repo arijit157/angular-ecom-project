@@ -1,0 +1,18 @@
+<div class="no-item-found container mt-10" *ngIf="message">
+    <h1 class="text-center">{{message}}</h1>
+</div>
+<div class="row search-item" *ngFor="let product of productArr">
+    <div class="col-sm-3">
+        <a routerLink="/product/{{product.id}}">
+            <img src="{{product.image_url}}" alt="product image" class="product-img">
+        </a>
+    </div>
+    <div class="col-sm-8 details">
+        <a routerLink="/product/{{product.id}}" class="product-name">
+            <h6>{{product.name}}</h6>
+        </a>
+        <p><b>Price: {{product.price}}</b></p>
+        <p><span>Color: {{product.color}}</span><span>Category: {{product.category}}</span></p>
+        <p>{{product.description}}</p>
+    </div>
+</div>

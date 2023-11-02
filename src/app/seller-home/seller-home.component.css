@@ -1,0 +1,59 @@
+tbody tr td{
+    font-weight: bold;
+}
+
+table td, table th{
+    padding: 5px;
+}
+
+table td{
+    text-align: center;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 26px;
+}
+
+.product-list{
+    margin-top: 23px;
+    margin-left: 144px;
+}
+
+.delete-btn{
+    background-color: rgb(248, 36, 36);
+    color: white;
+    font-weight: bold;
+    padding: 7px;
+    border-radius: 6px;
+    width: 80px;
+    cursor: pointer;
+}
+
+.update-btn{
+    border: 2px solid black;
+    background-color: rgb(5, 196, 5);
+    color: white;
+    font-weight: bold;
+    padding: 7px;
+    border-radius: 6px;
+    width: 80px;
+    cursor: pointer;
+    margin-left: 42px;
+    margin-right: 30px;
+    display: block;
+    margin-top: 10px;
+}
+
+th{
+    text-align: center;
+}
+
+table{
+    margin-left: -46px;
+}

@@ -1,0 +1,45 @@
+<div class="container">
+  <h1 class="text-center mt-3 mb-5">My Orders</h1>
+  <div class="row">
+    <div class="col-sm-2">
+      <span>Order</span>
+    </div>
+    <div class="col-sm-2">
+      <span>Order ID</span>
+    </div>
+    <div class="col-sm-2">
+      <span>Price</span>
+    </div>
+    <div class="col-sm-2">
+      <span>Date</span>
+    </div>
+    <div class="col-sm-2">
+      <span>Status</span>
+    </div>
+    <div class="col-sm-2">
+      <span>Action</span>
+    </div>
+  </div>
+
+  <div class="row order-data" *ngFor="let order of orderData">
+    <div class="col-sm-2">
+      <span><img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" class="order-img"></span>
+    </div>
+    <div class="col-sm-2">
+      <span>{{ order.id }}</span>
+    </div>
+    <div class="col-sm-2">
+      <span>{{ order.totalAmount }}</span>
+    </div>
+    <div class="col-sm-2">
+      <span>{{ order.orderedAt }}</span>
+    </div>
+    <div class="col-sm-2">
+      <span>In process</span>
+    </div>
+    <div class="col-sm-2">
+      <span><button class="btn btn-danger" (click)="cancelOrder(order.id)">Cancel</button></span>
+    </div>
+  </div>
+
+</div>

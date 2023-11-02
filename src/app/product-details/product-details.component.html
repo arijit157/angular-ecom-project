@@ -1,0 +1,22 @@
+<div class="row product-details" *ngIf="productData">
+    <div class="col-sm-6">
+        <img src="{{productData.image_url}}" class="product-image" alt="product_image">
+    </div>
+    <div class="col-sm-6">
+        <div class="details">
+            <h1>{{productData.name}}</h1>
+            <h6>Price: {{productData.price}}</h6>
+            <div>Color:<h6 [style.backgroundColor]="productData.color" class="product-color" title="{{productData.color}}"></h6></div>
+            <h6>Category: {{productData.category}}</h6>
+            <h6>Description: {{productData.description}}</h6>
+            <button class="btn btn-success btn1">Buy now</button>
+            <button class="btn btn-warning btn2" *ngIf="!showRemoveFromCartText" (click)="addToCart()">Add to cart</button>
+            <button class="btn btn-danger btn2" *ngIf="showRemoveFromCartText" (click)="removeFromCart(productData.id)">Delete from cart</button>
+            <div class="quantity-group">
+                <button class="qty-btn" (click)="decrementQuantity(quantityInput.value)" [disabled]="isDisabled">-</button>
+                <input type="text" value="1" class="qty-input" #quantityInput name="quantity-input" [(ngModel)]="quantity">
+                <button class="qty-btn" (click)="incrementQuantity(quantityInput.value)">+</button>
+            </div>
+        </div>
+    </div>
+</div>

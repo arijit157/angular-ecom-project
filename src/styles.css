@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* .footer-container{
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    height: 9vh;
+}
+
+.footer-text{
+    color: grey;
+    text-align: center;
+    margin-top: 15px;
+} */
+
+.carousel-caption{
+    background-color: rgb(105, 104, 104);
+    opacity: 0.8;
+    border-radius: 9px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    background-color: black;
+    border-radius: 5px;
+}

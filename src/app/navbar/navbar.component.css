@@ -1,0 +1,87 @@
+.navbar{
+    padding: 6px;
+    background-color: black;
+    color: white;
+    height: 57px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+.navbar ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 50px;
+}
+
+.nav-content{
+    /* display: inline-block; */
+    float: right;
+    padding-top: 4px;
+}
+
+.nav-logo{
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.nav-logo a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-links{
+    display: inline-block;
+}
+
+.nav-links-seller{
+    margin-right: 25px;
+    padding-top: 4px;
+}
+
+.search-bar{
+    display: inline-block;
+    padding-left: 35px;
+    padding-right: 10px;
+    padding-bottom: 16px;
+}
+
+input[type=text]{
+    border-radius: 3px;
+    height: 34px;
+    width: 200px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+button{
+    padding: 4px;
+    font-style: bold;
+}
+
+.suggested-result{
+    position: absolute;
+    display: list-item;
+    z-index: 10;
+    background-color: white;
+    width: 266px;
+    top: 45px;
+    list-style-type: none;
+    border: 1px solid #ddd;
+    padding-left: 0px;
+}
+
+.suggested-result li{
+    color: black;
+    cursor: pointer;
+    padding: 5px;
+}
+
+#myLink{
+    color: black;
+    text-decoration: none;
+}

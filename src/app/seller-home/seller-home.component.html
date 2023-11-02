@@ -1,0 +1,47 @@
+<h1>Your selling products</h1>
+<div class="product-list">
+    <p style="color: green; font-weight: bold; margin-left: 385px; margin-bottom: 10px;">{{ deleteProductMessage }}</p>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Image</th>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Color</th>
+                <th scope="col">Category</th>
+                <th scope="col">Description</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of productList">
+                <td>
+                    <img src="{{product.image_url}}">
+                </td>
+                <td>
+                    {{product.name}}
+                </td>
+                <td>
+                    ₹{{product.price}}
+                </td>
+                <td>
+                    {{product.color}}
+                </td>
+                <td>
+                    {{product.category}}
+                </td>
+                <td>
+                    {{product.description}}
+                </td>
+                <td>
+                    <button class="delete-btn" (click)="deleteProduct(product.id)" title="Delete">
+                        <fa-icon [icon]="icon"></fa-icon>
+                    </button>
+                    <a routerLink="/seller-update-product/{{product.id}}" class="update-btn" title="Update">
+                        <fa-icon [icon]="updateIcon"></fa-icon>
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

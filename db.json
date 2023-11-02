@@ -1,0 +1,124 @@
+{
+  "seller": [
+    {
+      "name": "Saurabh Kumar",
+      "email": "def@gmail.com",
+      "password": "456",
+      "id": 3
+    },
+    {
+      "name": "in28minutes",
+      "email": "bhaktaarijit98@gmail.com",
+      "password": "hunnybunny",
+      "id": 4
+    },
+    {
+      "name": "Rahul Das",
+      "email": "das.rahul@gmail.com",
+      "password": "159357",
+      "id": 5
+    },
+    {
+      "name": "Arijit Bhakta",
+      "email": "bhaktaarijit98@gmail.com",
+      "password": "hunny_bunny",
+      "id": 6
+    },
+    {
+      "name": "Sayan Roy",
+      "email": "sayanroy@gmail.com",
+      "password": "456159",
+      "id": 7
+    },
+    {
+      "name": "Ayan Mandal",
+      "email": "mandal.ayan@gmail.com",
+      "password": "Cas#123456",
+      "id": 8
+    },
+    {
+      "email": "sumanroy@yahoo.com",
+      "password": "123",
+      "id": 9
+    }
+  ],
+  "products": [
+    {
+      "name": "PUMA Sport Shoe",
+      "price": "2550",
+      "color": "White",
+      "category": "Footwear",
+      "description": "Sporty footwear from PUMA",
+      "image_url": "https://sslimages.shoppersstop.com/sys-master/images/h9e/h4b/26775746969630/FMPU38105103-WH_WHITE_alt1.jpg_2000Wx3000H",
+      "id": 8
+    },
+    {
+      "name": "Redmi 12 5G",
+      "price": "17999",
+      "color": "Blue",
+      "category": "Smartphone",
+      "description": "Smartphone from Xiaomi",
+      "image_url": "https://cdn1.smartprix.com/rx-iO5TmbiB9-w1200-h1200/O5TmbiB9.jpg",
+      "id": 9
+    },
+    {
+      "name": "ASUS ROG",
+      "price": "56000",
+      "color": "Black",
+      "category": "Gaming Laptop",
+      "description": "RGB gaming laptop",
+      "image_url": "https://5.imimg.com/data5/SELLER/Default/2022/1/GR/LI/GA/8118327/asus-rog-strix-g15-g512li-hn279t-gaming-laptop-500x500.jpg",
+      "id": 10
+    },
+    {
+      "name": "Noise Colorfit Icon2",
+      "price": "1700",
+      "color": "Brown",
+      "category": "Smartwatch",
+      "description": "Newly launched smartwatch",
+      "image_url": "https://cdn1.smartprix.com/rx-iN6MkniET-w1200-h1200/N6MkniET.jpg",
+      "id": 11
+    }
+  ],
+  "user": [
+    {
+      "name": "Arijit Bhakta",
+      "email": "bhaktaarijit98@gmail.com",
+      "password": "arijit@123",
+      "id": 5
+    },
+    {
+      "name": "in28minutes",
+      "email": "in28minutes@gmail.com",
+      "password": "dummy@in28minutes",
+      "id": 6
+    },
+    {
+      "name": "Jatin Pandey",
+      "email": "pandey.jatin@gmail.com",
+      "password": "Jatin@123",
+      "id": 7
+    }
+  ],
+  "cart": [],
+  "orders": [
+    {
+      "email": "bhaktaarijit98@gmail.com",
+      "address": "Tamluk, East Medinipur",
+      "contactNumber": "1234567890",
+      "totalAmount": 58947,
+      "userID": 5,
+      "orderedAt": "2/11/2023",
+      "id": 1
+    },
+    {
+      "email": "bhaktaarijit98@gmail.com",
+      "address": "Newtown , Kolkata 700156",
+      "contactNumber": "1233",
+      "totalAmount": 36715,
+      "userID": 5,
+      "orderedAt": "2/11/2023",
+      "id": 2
+    }
+  ]
+}

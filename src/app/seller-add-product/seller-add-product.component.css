@@ -1,0 +1,42 @@
+.add-products-form{
+    border-radius: 6px;
+    max-width: 500px;
+    margin: auto;
+    padding: 15px;
+    margin-top: 57px;
+}
+
+.product-price{
+    width: 267px;
+    padding: 3px;
+    font-weight: bold;
+    margin-left: 99px;
+    margin-top: 17px;
+}
+
+.add-products-btn{
+    width: 271px;
+    margin-left: 97px;
+    margin-top: 17px;
+    background-color: rgb(68, 255, 47);
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px;
+}
+
+input[type=text]{
+    width: 267px;
+    padding: 3px;
+    font-weight: bold;
+    margin-left: 99px;
+    margin-top: 17px;
+}
+
+textarea{
+    width: 267px;
+    padding: 3px;
+    font-weight: bold;
+    margin-left: 99px;
+    margin-top: 17px;
+}

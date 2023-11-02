@@ -1,0 +1,29 @@
+.search-item{
+    margin: 40px auto;
+    width: 800px;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.product-img{
+    width: 100%;
+    height: 157px;
+    object-fit: contain;
+}
+
+.details h6{
+    font-size: 24px;
+}
+
+span{
+    margin-right: 10px;
+}
+
+.no-item-found{
+    margin-top: 100px;
+}
+
+.product-name{
+    text-decoration: none;
+    color: black;
+}

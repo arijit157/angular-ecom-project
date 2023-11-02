@@ -1,0 +1,46 @@
+<nav class="navbar">
+    <div class="nav-logo">
+        <a routerLink="">
+            <h2>Flipcart.in</h2>
+        </a>
+    </div>
+    <div class="nav-content">
+        <div class="nav-links" *ngIf="menuType==='default'">
+            <ul>
+                <li><a routerLink="">Home</a></li>
+                <li><a routerLink="seller-auth">Seller</a></li>
+                <li><a routerLink="user-auth">Login</a></li>
+                <li><a routerLink="">Cart({{totalCartItems}})</a></li>
+            </ul>
+        </div>
+        <div class="nav-links" *ngIf="menuType==='user'">
+            <ul>
+                <li><a routerLink="">Home</a></li>
+                <li><a routerLink="seller-auth">Seller</a></li>
+                <li><a routerLink="cart-page">Cart({{totalCartItems}})</a></li>
+                <li><a routerLink="my-orders">My Orders</a></li>
+                <li><a (click)="userLogout()">Logout</a></li>
+                <li><p>Hello, {{ userName | titlecase }}</p></li>
+            </ul>
+        </div>
+        <div class="search-bar" *ngIf="menuType==='default' || menuType==='user'">
+            <input type="text" name="serach" placeholder="Search here" (keyup)="searchProduct($event)" (blur)="removeSearchResult()">
+            <button (click)="search()"><b>Search</b></button>
+            <ul class="suggested-result" *ngIf="searchResult">
+                <li *ngFor="let product of searchResult">
+                    <a (mousedown)="redirectToDetails(product.id)" id="myLink">
+                        {{product.name}}
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-links nav-links-seller" *ngIf="menuType==='seller'">
+            <ul>
+                <li><a routerLink="seller-home">Product List</a></li>
+                <li><a routerLink="seller-add-product">Add product</a></li>
+                <li><a (click)="logout()">Logout</a></li>
+                <li><p>Hello, {{ sellerName | titlecase }}</p></li>
+            </ul>
+        </div>
+    </div>
+</nav>

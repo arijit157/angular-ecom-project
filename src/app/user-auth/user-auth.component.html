@@ -1,0 +1,30 @@
+<div class="signup" *ngIf="!showLoginForm">
+    <h1 class="form-heading">User Signup</h1>
+    <form #userSignupForm="ngForm" (ngSubmit)="handleSignUp(userSignupForm.value)" class="common-form">
+        <label for="name" style="font-weight: bold;">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter name" class="form-input" ngModel>
+        <label for="email" style="font-weight: bold;">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter email" class="form-input" ngModel>
+        <label for="password" style="font-weight: bold;">Password</label>
+        <input type="password" name="password" id="password" placeholder="Enter password" class="form-input" ngModel>
+        <button type="submit" class="btn btn-success form-button">Sign Up</button>
+        <p (click)="launchLoginForm()" class="form-footer-text">Already have an account? Login</p>
+    </form>
+</div>
+
+<div class="login" *ngIf="showLoginForm">
+    <h1 class="form-heading">User Login</h1>
+    <div class="login-error-text" *ngIf="showLoginErrorMessage">
+        <p>Login failed, please try again</p>
+    </div>
+    <form #userLoginForm="ngForm" (ngSubmit)="handleLogin(userLoginForm.value)" class="common-form">
+        <label for="login-email" style="font-weight: bold;">Email</label>
+        <input type="email" name="email" id="login-email" placeholder="Enter email" class="form-input" email ngModel required #email="ngModel">
+        <p><span *ngIf="email.invalid && email.touched" style="color: red; font-weight: bold; font-size: 12px;">Please enter email</span></p>
+        <label for="login-password" style="font-weight: bold;">Password</label>
+        <input type="password" name="password" id="login-password" placeholder="Enter password" class="form-input" minlength="8" ngModel required #password="ngModel">
+        <p><span *ngIf="password.invalid && password.touched" style="color: red; font-weight: bold; font-size: 12px;">Please enter password</span></p>
+        <button type="submit" class="form-button" [disabled]="userLoginForm.invalid">Login</button>
+        <p (click)="launchSignupForm()" class="form-footer-text">Do not have account? Sign up</p>
+    </form>
+</div>

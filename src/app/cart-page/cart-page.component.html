@@ -1,0 +1,41 @@
+<div class="cart-page">
+    <h1>My Cart</h1>
+    <div class="row">
+        <div class="col-sm-8 details">
+            <div *ngIf="cartData?.length === 0">
+                <!-- <h3 class="text-center" style="margin-top: 70px; color: grey;">You have no items in your cart</h3> -->
+                <img src="https://i.pinimg.com/736x/2e/ac/fa/2eacfa305d7715bdcd86bb4956209038.jpg" id="empty-cart-img">
+            </div>
+            <ul *ngFor="let item of cartData">
+                <li>
+                    <img src="{{item.image_url}}" alt="noise smart watch">
+                </li>
+                <li>
+                    <span>Product name: {{item.name}}</span>
+                </li>
+                <li>
+                    <span>Price: &#8377; {{item.price}}</span>
+                </li>
+                <li>
+                    <span>Quantity: {{item.quantity}}</span>
+                </li>
+                <li>
+                    <button class="btn btn-danger">Remove from cart</button>
+                </li>
+            </ul>
+        </div>
+        <div class="col-sm-4 summary">
+            <h3>Summary</h3>
+            <ul>
+                <li><span>Amount: </span> <span>{{totalAmount}}</span></li>
+                <li><span>Tax: </span> <span>{{tax}}</span></li>
+                <li><span>Delivery: </span> <span>{{deliveryCharge}}</span></li>
+                <li><span>Discount: </span> <span>{{discount}}</span></li>
+                <li><span><b>Total: </b> </span> <span><b>&#8377; {{netAmount}}</b></span></li>
+                <li>
+                    <button class="btn btn-success" id="checkout-btn" (click)="gotoCheckoutPage()" [disabled]="isDisabled">Checkout now!</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

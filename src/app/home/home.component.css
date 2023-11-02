@@ -1,0 +1,41 @@
+.product-img{
+    object-fit: contain;
+    height: 600px;
+    width: 100%;
+}
+
+.card img{
+    width: 287px;
+    height: 215px;
+}
+
+.add-to-cart{
+    margin-left: 69px;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card-title{
+    text-align: center;
+    font-weight: bold;
+}
+
+.card-text{
+    text-align: center;
+}
+
+.product-list-wrapper h1{
+    text-align: center;
+}
+
+.product-list-wrapper{
+    margin-top: 55px;
+}
+
+.product-info{
+    display: flex;
+    justify-content: space-between;
+}

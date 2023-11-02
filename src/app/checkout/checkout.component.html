@@ -1,0 +1,30 @@
+<div class="alert alert-success text-center" role="alert" *ngIf="isOrderPlaced">
+    Order placed successfully!
+</div>
+<div class="checkout container">
+    <h1 class="text-center mt-3">Checkout</h1>
+    <div class="row">
+        <div class="col-sm-7">
+            <h3>Add shipping address</h3>
+            <form #shippingForm="ngForm" (ngSubmit)="handleOrder(shippingForm.value)">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Enter Email address</label>
+                    <input type="email" class="form-control input-width" id="email" name="email" ngModel>
+                </div>
+                <div class="mb-3">
+                    <label for="address" class="form-label">Enter Address</label>
+                    <input type="text" class="form-control input-width" id="address" name="address" ngModel>
+                </div>
+                <div class="mb-3">
+                    <label for="mobile-number" class="form-label">Enter Contact Detail</label>
+                    <input type="text" class="form-control input-width" id="mobile-number" name="mobile_number" ngModel>
+                </div>
+                <button class="btn btn-success mt-3" id="order-btn">Order now</button>
+            </form>
+        </div>
+        <div class="col-sm-5" style="margin-top: 153px;">
+            <h5>Total amount: &#8377;{{netAmount}}</h5>
+            <h5>Payment method: <b>Cash on delivery</b></h5>
+        </div>
+    </div>
+</div>
