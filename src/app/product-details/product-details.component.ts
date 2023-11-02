@@ -116,7 +116,6 @@ export class ProductDetailsComponent {
       if (userInfo) {
         let parsedUserInfo = JSON.parse(userInfo);
         this.productService.getAllCartItems(parsedUserInfo.id).subscribe((result) => {
-          //TODO:
           this.cartData=result;
         });
         this.cartData=this.cartData?.filter((item: cart) => item.productID === productID);

@@ -68,7 +68,7 @@ export class ProductService {
       //   cartData = result;
       //   console.warn(cartData);
       // });
-      // this.dbCartData.emit(cartData);  //TODO:
+      // this.dbCartData.emit(cartData);
     }
     );
   }
